@@ -1,0 +1,16 @@
+/* Responsive nav bar styles  */
+@media (max-width:980px){
+    .btn-style::after{
+        animation: none;
+    }
+}
+@media (max-width:1230px){
+    .navbar-brand{
+        margin-left: 4rem;
+    }
+}
+@media (max-width:720px){
+    .navbar-brand{
+        margin-left: 1rem;
+    }
+}

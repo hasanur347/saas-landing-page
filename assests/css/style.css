@@ -7,6 +7,14 @@
     --font-family:"Poppins", serif;
     --nav-text-color:#3E3F66;
 }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
 body{
     margin: 0;
     padding: 0;
@@ -18,7 +26,7 @@ body{
 }
 /* Navbar start */
 .navbar-brand{
-    margin-left: 10rem;
+    margin-left: 8.5rem;
 }
 .nav-link{
     color:var(--nav-text-color);
@@ -98,28 +106,69 @@ body{
 .dropdown-item:hover{
     color: var(--btn-color);
 }
-/* Responsive nav bar styles  */
-@media (max-width:980px){
-    .btn-style::after{
-        animation: none;
-    }
-}
-@media (max-width:1230px){
-    .navbar-brand{
-        margin-left: 4rem;
-    }
-}
-@media (max-width:720px){
-    .navbar-brand{
-        margin-left: 1rem;
-    }
-}
 /* Navbar end */
-
 
 /* Banner section start */
 .banner-section{
     margin-top: 70px;
     position: relative;
+}
+.banner-text{
+    margin-top: 50px;
+}
+.banner-section .banner-text h1{
+    font-size: 55px;
+    font-weight: 700;
+    line-height:-1.5px;
+    color: var(--dark-text-color);
+}
+.banner-section .banner-text h1 span{
+    color: var(--light-text-color);
+}
+.banner-text p{
+    margin-top:0;
+    margin-bottom: 1rem;
+}
+.app-btn li {
+    border: 2px solid var(--btn-color);
+    border-radius: 12px;
+    display: block;
+    padding: 12px 30px;
+    background-color: #fff;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.app-btn li .hover-img {
+    display: none; /* Hide hover image initially */
+}
+
+.app-btn li:hover {
+    background-color: var(--btn-color);
+}
+
+.app-btn li:hover .default-img {
+    display: none; /* Hide default image */
+}
+
+.app-btn li:hover .hover-img {
+    display: inline; /* Show hover image */
+}
+.app-users ul {
+    display: flex;
+    align-items: center;
+}
+
+.app-users ul li {
+    position: relative;
+    margin-left: -15px;
+}
+
+.app-users ul li:first-child {
+    margin-left: 0; /* Ensures the first image is not shifted */
+}
+.app-users p{
+    line-height: 1.3;
+    margin-block: auto;
 }
 /* Banner section end */
