@@ -4,6 +4,45 @@
         animation: none;
     }
 }
+@media (max-width:990px){
+    .banner-section{
+        margin-top: 30px;
+    }
+    .banner-text{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .banner-section .banner-text h1{
+        font-size: 2.8rem;
+    }
+    .app-btn{
+        justify-content: center;
+    }
+    .app-users{
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width:426px){
+    .banner-section .banner-text h1{
+        font-size: 2rem;
+    }
+    .navbar-brand{
+        margin-left: .4rem;
+    }
+    
+    .banner-section{
+        margin-top: 0;
+    }
+}
+@media (max-width:325px) {
+    .banner-section .banner-text h1{
+        font-size: 1.5rem;
+    }
+    .banner-slider::before{
+        display: none;
+    }
+}
 @media (max-width:1230px){
     .navbar-brand{
         margin-left: 4rem;
@@ -12,5 +51,17 @@
 @media (max-width:720px){
     .navbar-brand{
         margin-left: 1rem;
+    }
+}
+@media (max-width:767px){
+    .banner-slider::before{
+        width: 350px;
+        height: 350px;
+    }
+    .banner-slider .left-icon{
+        display: none;
+    }
+    .banner-slider .right-icon{
+        display: none;
     }
 }
